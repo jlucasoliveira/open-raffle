@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 89
+include = '\.pyi?$'
+exclude = '''
+(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | teclat
+    |  base_backend/asgi\.py
+    |  base_backend/wsgi\.py
+    | .+/migrations
+    | manage\.py
+    | _build
+    | buck-out
+    | build
+    | dist
+)
+'''
